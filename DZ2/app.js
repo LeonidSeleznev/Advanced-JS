@@ -33,15 +33,13 @@ class ProductList {
     }
 
     goodsPrice() {
-        let goods = this._goods;
-
         let totalSum = 0;
 
         for(let i=0; i<goods.length;i++) {
-            totalSum += goods[i].price
+            totalSum += this.goods[i].price
         };
 
-        console.log(totalSum);
+        return totalSum;
     }
 }
 
